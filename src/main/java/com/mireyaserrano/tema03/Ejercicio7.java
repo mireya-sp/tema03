@@ -28,6 +28,7 @@ public class Ejercicio7 {
         }else{
             cuotaFinal = cuotaInicial;
         }
+        scanner.close();
         System.out.println("La cuota ha pagar es de: " + cuotaFinal + " euros.");
     }
 }
