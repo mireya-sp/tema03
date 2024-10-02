@@ -12,6 +12,8 @@ public class Ejercicio2 {
 
         if (num1>num2 ){
             System.out.println(num1 + " es mayor que " + num2);
+        }else if(num1 == num2){
+            System.out.println(num1 + " es igual que " + num2);
         }else{
             System.out.println(num2 + " es mayor que " + num1);
         }
