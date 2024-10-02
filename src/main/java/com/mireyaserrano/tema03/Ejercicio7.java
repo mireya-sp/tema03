@@ -7,27 +7,27 @@ public class Ejercicio7 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce tu edad:");
         int edad = Integer.parseInt(scanner.nextLine());
-        int cuota_inicial;
-        float descuento, cuota_final;
+        int cuotaInicial;
+        float descuento, cuotaFinal;
 
-        cuota_inicial = 500;
+        cuotaInicial = 500;
         if (edad > 65){
-            descuento = cuota_inicial * 50 / 100;
-            cuota_final = cuota_inicial - descuento;
+            descuento = cuotaInicial * 50 / 100;
+            cuotaFinal = cuotaInicial - descuento;
         }
         if (edad<18){
             System.out.println("Padres socios? (0=no, 1=si)");
             int socios = Integer.parseInt(scanner.nextLine());
             if (socios == 0){
-                descuento = cuota_inicial * 25 / 100;
-                cuota_final = cuota_inicial - descuento;
+                descuento = cuotaInicial * 25 / 100;
+                cuotaFinal = cuotaInicial - descuento;
             }else{
-                descuento = cuota_inicial * 35 / 100;
-                cuota_final = cuota_inicial - descuento;
+                descuento = cuotaInicial * 35 / 100;
+                cuotaFinal = cuotaInicial - descuento;
             }
         }else{
-            cuota_final = cuota_inicial;
+            cuotaFinal = cuotaInicial;
         }
-        System.out.println("La cuota ha pagar es de: " + cuota_final + " euros.");
+        System.out.println("La cuota ha pagar es de: " + cuotaFinal + " euros.");
     }
 }
