@@ -16,20 +16,11 @@ public class Ejercicio9 {
         scanner.close();
 
         if (lado1 == lado2 && lado2 == lado3){
-            tipo = 1;
+            System.out.println("El triangulo es equilatero.");
+        }else if( (lado1 == lado2) || (lado2 == lado3) || (lado1 == lado3) ){
+            System.out.println("El triangulo es isosceles.");
+        }else {
+            System.out.println("El triangulo es escaleno.");
         }
-        if ( (lado1 == lado2 && lado2 != lado3) || (lado1 != lado2 && lado2 == lado3) || (lado1 != lado2 && lado1 == lado3) ){
-            tipo = 2;
-        }
-        if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3 ){
-            tipo = 3;
-        }
-        triangulo = switch (tipo){
-            case 1 -> "Equilatero";
-            case 2 -> "Isosceles";
-            case 3 -> "Escaleno";
-            default -> "Pepa";
-        };
-        System.out.println("El triangulo es " + triangulo );
     }
 }
