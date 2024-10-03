@@ -11,19 +11,20 @@ public class Ejercicio8 {
         int caraOpuesta = -1;
         scanner.close();
 
-       if (num<7 && num>0){
-           caraOpuesta = switch (num){
-               case 1 -> 6;
-               case 2 -> 5;
-               case 3 -> 4;
-               case 4 -> 3;
-               case 5 -> 2;
-               case 6 -> 1;
-               default -> -1;
-           };
-           System.out.println("La cara opuesta de " + num + " es " + caraOpuesta);
-       }else {
-           System.out.println("ERROR: Introduce un numero valido");
-       }
+        if(num<1 || num>6){
+            System.err.println("ERROR: Numero incorrecto");
+            System.exit(-1);
+        }
+        caraOpuesta = switch (num){
+            case 1 -> 6;
+            case 2 -> 5;
+            case 3 -> 4;
+            case 4 -> 3;
+            case 5 -> 2;
+            case 6 -> 1;
+            default -> -1;
+        };
+        System.out.println("La cara opuesta de " + num + " es " + caraOpuesta);
+
     }
 }
