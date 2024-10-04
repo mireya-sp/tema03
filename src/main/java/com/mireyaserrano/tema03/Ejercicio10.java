@@ -16,6 +16,5 @@ public class Ejercicio10 {
         }else {
             System.out.println("El anio " + year + " no es bisiesto.");
         }
-
     }
 }
