@@ -6,7 +6,7 @@ public class Ejercicio4 {
         for (int i = 0; i <= 100; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);
-                impares = impares + 1;
+                impares++;
             }
         }
         System.out.println("Hay " + impares + " numeros impares");
