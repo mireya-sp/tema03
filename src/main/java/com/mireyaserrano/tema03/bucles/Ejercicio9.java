@@ -7,23 +7,14 @@ public class Ejercicio9 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduzca un número y le digo si es primo o no");
         int num = Integer.parseInt(scanner.nextLine());
-        float total = 0;
-        int primo = 0, nprimo = 0;
         scanner.close();
 
-        for (int i = 2; i < num; i++){
-            total = (float)num / i;
-            /*total = total;*/
-            if (total == (int)total){
-                nprimo = nprimo + 1;
+        for (int i = 2; i <= Math.sqrt(num); i++){
+            if (num % i == 0) {
+                System.out.println("El número " + num + " no es primo");
             }else {
-                primo = primo + 1;
+                System.out.println("El número " + num + " es primo");
             }
-        }
-        if (primo > nprimo){
-            System.out.println("El número " + num + " es primo");
-        }else {
-            System.out.println("El número " + num + " no es primo");
         }
     }
 }
