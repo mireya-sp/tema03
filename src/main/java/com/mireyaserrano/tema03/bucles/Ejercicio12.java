@@ -14,7 +14,7 @@ public class Ejercicio12 {
         intentos = intentos - 1;
 
         Random random = new Random();
-        int intRandom = random.nextInt(1, 100);
+        int intRandom = random.nextInt(1, 101);
 
         for (int i = 0; intentos > 0; intentos--){
             if (num == intRandom) {
