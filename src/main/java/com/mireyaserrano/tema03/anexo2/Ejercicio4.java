@@ -5,7 +5,7 @@ public class Ejercicio4 {
         String cadena = "";
         for (int i =1; i <= 9; i++){
             cadena = cadena + i;
-            System.out.println(cadena);
+            System.out.printf("%s\n", cadena);
         }
     }
 }
