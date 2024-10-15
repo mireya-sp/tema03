@@ -6,7 +6,7 @@ public class Ejercicio2 {
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         int h, m, s;
-        boolean pepa = true;
+        boolean pepa = true;//me gusta llamar a mi variable auxiliar pepa, se que seria mejor llamrla valido.
         do {
             System.out.println("Introduzca las horas:");
             h = Integer.parseInt(scanner.nextLine());
