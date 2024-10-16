@@ -11,10 +11,10 @@ public class Ejercicio8 {
                 colorf = 40;
                 for (int i = 1; i <= 8; i++) {
                     cadena = intensidad + ";" + colorl + ";" + colorf;
-                    System.out.printf("\u001B[" + intensidad + ";" + colorl + ";" + colorf + "m" + "%8s" + "\u001B[0m", cadena);
+                    System.out.printf("\u001B[" + intensidad + ";" + colorl + ";" + colorf + "m" + " %s " + "\u001B[0m", cadena);
                     colorf += 1;
                 }
-                System.out.println("");
+                System.out.println();
                 colorl += 1;
             }
             colorl = 30;
