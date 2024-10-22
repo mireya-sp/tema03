@@ -1,4 +1,4 @@
-package com.mireyaserrano.tema03.metodos;
+package com.mireyaserrano.tema04;
 
 public class Ejercicio1 {
     public static int sumar(int x, int y){
